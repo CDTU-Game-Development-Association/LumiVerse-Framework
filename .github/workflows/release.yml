@@ -2,7 +2,6 @@ name: Auto Release
 
 on:
   push:
-    branches: [ "main" ]
     tags:
       - 'v*.*.*'
 
@@ -21,7 +20,7 @@ jobs:
       - name: Create Archive
         run: |
           mkdir -p release
-          zip -r release/LumiverseFramework-${GITHUB_REF##*/}.zip LumiverseFramework
+          zip -r release/LumiverseFramework-${GITHUB_REF##*/}.zip LumiverseFramework/
       # 上传
       - name: Upload release asset
         uses: softprops/action-gh-release@v1
