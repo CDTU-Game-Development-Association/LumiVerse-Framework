@@ -24,11 +24,11 @@ jobs:
           ls
           echo "下一条"
           ls ./LumiVerseFramework/
-          zip -r release/LumiverseFramework-${GITHUB_REF##*/}.zip ./LumiVerseFramework/
+          zip -r ./release/LumiverseFramework-${GITHUB_REF##*/}.zip ./LumiVerseFramework/
       # 上传
       - name: Upload release asset
         uses: softprops/action-gh-release@v2
         with:
-          files: release/LumiverseFramework-${GITHUB_REF##*/}.zip
+          files: ./release/LumiverseFramework-${GITHUB_REF##*/}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
