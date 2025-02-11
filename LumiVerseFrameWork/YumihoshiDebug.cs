@@ -1,7 +1,7 @@
 using System;
 using Godot;
 
-namespace LumiVerseFramework1.LumiVerseFrameWork;
+namespace LumiVerseFramework1.LumiVerseFramework;
 
 public static class YumihoshiDebug
 {
