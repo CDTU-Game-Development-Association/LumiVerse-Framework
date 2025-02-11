@@ -1,0 +1,21 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="LumiVerse-Framework"
+config/tags=PackedStringArray("自己的框架")
+run/main_scene="res://Scenes/TestScene.tscn"
+config/features=PackedStringArray("4.3", "C#", "Forward Plus")
+config/icon="res://DefaultIcon.png"
+
+[dotnet]
+
+project/assembly_name="LumiVerse-Framework1"
