@@ -1,5 +1,5 @@
 using Godot;
-using LumiVerseFramework1.LumiVerseFramework;
+using LumiVerseFramework;
 
 namespace LumiVerseFramework1.Scripts;
 
