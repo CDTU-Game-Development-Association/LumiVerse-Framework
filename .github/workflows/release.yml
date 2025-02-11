@@ -20,6 +20,7 @@ jobs:
       - name: Create Archive
         run: |
           mkdir -p release
+          ls
           zip -r release/LumiverseFramework-${GITHUB_REF##*/}.zip ./LumiverseFramework/
       # 上传
       - name: Upload release asset
