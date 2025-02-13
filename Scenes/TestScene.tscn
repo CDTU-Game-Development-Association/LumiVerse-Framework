@@ -1,8 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://cybjidjvq6u0c"]
+[gd_scene load_steps=3 format=3 uid="uid://cybjidjvq6u0c"]
 
 [ext_resource type="Script" path="res://Scripts/TestDebug.cs" id="1_37ukb"]
+[ext_resource type="Script" path="res://Scripts/TestSwitchFullscreen.cs" id="2_lowf8"]
 
 [node name="TestScene" type="Node"]
 
 [node name="TestDebug" type="Node" parent="."]
 script = ExtResource("1_37ukb")
+
+[node name="TestSwitchFullscreen" type="Node" parent="."]
+script = ExtResource("2_lowf8")

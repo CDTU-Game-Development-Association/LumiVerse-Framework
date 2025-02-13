@@ -1,7 +1,15 @@
+// *****************************************************************************
+// @author: 绘星tsuki
+// @email: xiaoyuesun915@gmail.com
+// @creationDate: 2025/02/13 15:02
+// @version: 1.0
+// @description:
+// *****************************************************************************
+
 using System;
 using Godot;
 
-namespace LumiVerseFramework;
+namespace LumiVerseFramework.Common;
 
 public static class YumihoshiDebug
 {
