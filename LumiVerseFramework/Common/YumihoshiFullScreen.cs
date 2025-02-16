@@ -20,10 +20,8 @@ public class YumihoshiFullScreen
     public static void SwitchFullScreen(bool isFullScreen, int windowId = 0)
     {
         if (isFullScreen)
-        {
             DisplayServer.WindowSetMode(DisplayServer.WindowMode.Fullscreen,
                 windowId);
-        }
     }
 
     /// <summary>

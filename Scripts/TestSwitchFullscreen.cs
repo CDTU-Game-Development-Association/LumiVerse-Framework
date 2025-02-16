@@ -8,8 +8,6 @@ public partial class TestSwitchFullscreen : Node
     public override void _Process(double delta)
     {
         if (Input.IsActionJustPressed("SwitchFullscreen"))
-        {
             YumihoshiFullScreen.SwitchFullScreenAuto();
-        }
     }
 }
