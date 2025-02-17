@@ -11,7 +11,7 @@ namespace LumiVerseFramework.Base.FSM.Types;
 /// <summary>
 /// 状态枚举，根据需求更改
 /// </summary>
-public enum StateType
+public enum TestStateType
 {
     Test,
     Test2
