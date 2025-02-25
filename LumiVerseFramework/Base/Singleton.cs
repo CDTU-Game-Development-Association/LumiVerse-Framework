@@ -12,17 +12,13 @@ namespace LumiVerseFramework.Base;
 
 public partial class Singleton<T> : Node where T : Node
 {
-    public static T Instance => _instance;
-    private static T _instance;
+    public static T Instance { get; private set; }
 
     public override void _EnterTree()
     {
         base._EnterTree();
-        if (_instance != null)
-        {
-            QueueFree();
-        }
+        if (Instance != null) QueueFree();
 
-        _instance = this as T;
+        Instance = this as T;
     }
 }
