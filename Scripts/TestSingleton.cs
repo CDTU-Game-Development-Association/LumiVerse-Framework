@@ -6,12 +6,10 @@
 // @description:
 // *****************************************************************************
 
-using Godot;
 using LumiVerseFramework.Base;
 
 namespace LumiVerseFramework1.Scripts;
 
 public partial class TestSingleton : Singleton<TestSingleton>
 {
-    
 }
