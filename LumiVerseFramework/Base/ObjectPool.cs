@@ -39,14 +39,15 @@ public class ObjectPool<T> where T : Node2D, IObjPool
     /// <summary>
     /// 获取一个对象
     /// </summary>
+    /// <param name="enable">是否立即启用</param>
     /// <returns></returns>
-    public T GetObj()
+    public T GetObj(bool enable = true)
     {
         // 队列中没有对象，创建新对象
         if (_pool.Count <= 0) return CreateNewObj();
         // 队列中有对象，直接返回
         T obj = _pool.Dequeue();
-        obj.Enable();
+        if (enable) obj.Enable();
         return obj;
     }
 
