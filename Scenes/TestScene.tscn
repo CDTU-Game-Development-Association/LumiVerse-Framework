@@ -1,12 +1,14 @@
-[gd_scene load_steps=8 format=3 uid="uid://cybjidjvq6u0c"]
+[gd_scene load_steps=10 format=3 uid="uid://cybjidjvq6u0c"]
 
-[ext_resource type="Script" path="res://Scripts/TestDebug.cs" id="1_37ukb"]
-[ext_resource type="Script" path="res://Scripts/TestSwitchFullscreen.cs" id="2_lowf8"]
-[ext_resource type="Script" path="res://Scripts/TestFsm.cs" id="3_4yhtt"]
-[ext_resource type="Script" path="res://Scripts/States/Idle.cs" id="4_ht8g0"]
-[ext_resource type="Script" path="res://Scripts/States/Walk.cs" id="5_a7gsu"]
-[ext_resource type="Script" path="res://Scripts/States/Attack.cs" id="6_6ih1d"]
-[ext_resource type="Script" path="res://Scripts/TestConvertPos.cs" id="7_5xg16"]
+[ext_resource type="Script" uid="uid://ccrgfjqsqn471" path="res://Scripts/TestDebug.cs" id="1_37ukb"]
+[ext_resource type="Script" uid="uid://dyyl2fv3k77jy" path="res://Scripts/TestSwitchFullscreen.cs" id="2_lowf8"]
+[ext_resource type="Script" uid="uid://d25amt6f5embh" path="res://Scripts/TestFsm.cs" id="3_4yhtt"]
+[ext_resource type="Script" uid="uid://bps053s4ijxud" path="res://Scripts/States/Idle.cs" id="4_ht8g0"]
+[ext_resource type="Script" uid="uid://1rkw227m0ql1" path="res://Scripts/States/Walk.cs" id="5_a7gsu"]
+[ext_resource type="Script" uid="uid://d2u4q32oxtc4b" path="res://Scripts/States/Attack.cs" id="6_6ih1d"]
+[ext_resource type="Script" uid="uid://cjmlqggtj1jxi" path="res://Scripts/TestConvertPos.cs" id="7_5xg16"]
+[ext_resource type="Script" uid="uid://8y6747avd410" path="res://Scripts/TestObjectPool.cs" id="8_6xh1p"]
+[ext_resource type="PackedScene" uid="uid://li3jrbjtlfy3" path="res://Scripts/Bullet.tscn" id="9_5rbs6"]
 
 [node name="TestScene" type="Node"]
 
@@ -37,3 +39,7 @@ position = Vector2(-958, 539)
 
 [node name="TestConvertPos" type="Node" parent="."]
 script = ExtResource("7_5xg16")
+
+[node name="Test" type="Node2D" parent="."]
+script = ExtResource("8_6xh1p")
+_bullet = ExtResource("9_5rbs6")
