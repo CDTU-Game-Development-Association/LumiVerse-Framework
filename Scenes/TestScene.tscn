@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cybjidjvq6u0c"]
+[gd_scene load_steps=11 format=3 uid="uid://cybjidjvq6u0c"]
 
 [ext_resource type="Script" uid="uid://ccrgfjqsqn471" path="res://Scripts/TestDebug.cs" id="1_37ukb"]
 [ext_resource type="Script" uid="uid://dyyl2fv3k77jy" path="res://Scripts/TestSwitchFullscreen.cs" id="2_lowf8"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://cjmlqggtj1jxi" path="res://Scripts/TestConvertPos.cs" id="7_5xg16"]
 [ext_resource type="Script" uid="uid://8y6747avd410" path="res://Scripts/TestObjectPool.cs" id="8_6xh1p"]
 [ext_resource type="PackedScene" uid="uid://li3jrbjtlfy3" path="res://Scripts/Bullet.tscn" id="9_5rbs6"]
+[ext_resource type="Texture2D" uid="uid://d4f4nuryvo4i3" path="res://icon.svg" id="10_201fe"]
 
 [node name="TestScene" type="Node"]
 
@@ -35,7 +36,7 @@ script = ExtResource("6_6ih1d")
 StateType = "Attack"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-958, 539)
+position = Vector2(-619, 539)
 
 [node name="TestConvertPos" type="Node" parent="."]
 script = ExtResource("7_5xg16")
@@ -43,3 +44,7 @@ script = ExtResource("7_5xg16")
 [node name="Test" type="Node2D" parent="."]
 script = ExtResource("8_6xh1p")
 _bullet = ExtResource("9_5rbs6")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(-882, 659)
+texture = ExtResource("10_201fe")
